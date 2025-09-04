@@ -33,4 +33,4 @@ jobs:
           JF_ACCESS_TOKEN: ${{ secrets.JF_ACCESS_TOKEN }}
           JF_GIT_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           JF_GIT_BASE_BRANCH: ${{ matrix.branch }}
-          JF_REQUIREMENTS_FILE: "/services/web/requirements.txt"
+          JF_REQUIREMENTS_FILE: "requirements.txt"
