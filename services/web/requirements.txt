@@ -4,6 +4,6 @@ SQLAlchemy==2.0.28
 gunicorn==20.1.0
 psycopg2-binary==2.9.6
 flask-socketio==5.3.6
-pillow==8.4.0
+# pillow==8.4.0
 gevent-websocket==0.10.1
 pycryptodomex==3.20.0
