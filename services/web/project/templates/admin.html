@@ -1,0 +1,30 @@
+{% extends 'base.html' %} {% block content %}
+<form action="{{ url_for('admin.update_admin_status') }}" method="post">
+    <div class="content">
+        <div class="buttons" id="admin_content">
+            <h3>Admin Panel</h3>
+            <table>
+                <tr>
+                    <th>Username</th>
+                    <th>Email</th>
+                    <th>Admin</th>
+                </tr>
+                {% for user in users %}
+                <tr>
+                    <td>{{ user.username }}</td>
+                    <td>{{ user.email }}</td>
+                    <td>
+                        <label class="checkbox-container">
+                            <input type="checkbox" name="is_admin_{{ user.id }}" {% if user.is_admin %}checked{% endif %}>
+                            <input type="hidden" name="user_id_{{ user.id }}" value="{{ user.id }}">
+                            <span class="checkmark"></span>
+                        </label>
+                    </td>
+                </tr>
+                {% endfor %}
+            </table>
+            <button type="submit" class="submit-button">Update Admin Status</button>
+        </div>
+    </div>
+  </form>
+{% endblock %}

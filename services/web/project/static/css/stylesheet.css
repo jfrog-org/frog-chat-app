@@ -1,0 +1,323 @@
+/* Add this CSS to your existing stylesheet.css file */
+body {
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #4caf50, #388e3c);
+    background-size: 400% 400%;
+    animation: gradientBG 10s ease infinite;
+  }
+  @keyframes gradientBG {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .buttons {
+    background-color: #fff;
+    padding: 30px; /* Increase padding for more space */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  #admin_content {
+    width: 800px; /* Increase width */
+    max-width: 90%; /* Set maximum width */
+    margin: 50px auto; /* Center the container */
+  }
+  
+  .buttons h3 {
+    text-align: center;
+    color: #4caf50; /* Adjust to your desired heading color */
+  }
+  
+  .join {
+    margin-bottom: 30px; /* Increase margin for more space */
+  }
+  
+  .join input[type="text"] {
+    width: calc(100% - 100px);
+    padding: 15px; /* Increase padding for more space */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 20px; /* Increase margin for more space */
+  }
+  
+  .join button {
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 15px 30px; /* Increase padding for more space */
+    cursor: pointer;
+  }
+  
+  .join button:hover {
+    background-color: #388e3c; /* Darker shade of green */
+  }
+  
+  .create-btn {
+    display: block;
+    width: 100%;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 15px 0; /* Increase padding for more space */
+    margin-top: 20px; /* Increase margin for more space */
+    cursor: pointer;
+  }
+  
+  .create-btn:hover {
+    background-color: #388e3c; /* Darker shade of green */
+  }
+  
+  .error {
+    color: #c62828; /* Adjust to your desired error message color */
+    margin-top: 20px; /* Increase margin for more space */
+  }
+
+/* Add this CSS to your existing stylesheet.css file */
+@keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .message-box {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    min-height: 400px; /* Set a minimum height */
+    overflow-y: auto; /* Add vertical scroll if needed */
+    margin: 0 20px; /* Add margin on the sides */
+    min-width: 1100px; /* Set a minimum width */
+  }
+  
+  .message-box h2 {
+    text-align: center;
+    color: #4caf50;
+    margin-bottom: 20px;
+  }
+  
+  .messages {
+    overflow-y: auto;
+    max-height: 300px; /* Limit the maximum height of messages */
+    min-height: 200px; /* Set a minimum height for messages */
+  }
+  
+  .message {
+    margin-bottom: 10px;
+    /*animation: fade-in 0.5s ease; Apply fade-in animation */
+  }
+  
+  .username {
+    font-weight: bold;
+    color: #4caf50;
+  }
+  
+  .text {
+    margin-left: 10px;
+  }
+  
+  .timestamp {
+    margin-left: 10px;
+    color: #aaa;
+  }
+  
+  .message-input {
+    width: calc(100% - 100px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .send-button {
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .send-button:hover {
+    background-color: #388e3c;
+  }
+  
+  .fade-in {
+    animation: fade-in 0.5s ease;
+  }
+
+  /* Add this CSS to your existing stylesheet.css file */
+/* File upload input */
+.file-upload-button {
+  display: inline-block;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.file-upload-button:hover {
+  background-color: #388e3c;
+}
+
+.file-upload-input {
+  display: none;
+}
+
+.material-icons {
+  vertical-align: middle;
+  margin-right: 5px;
+  font-family: Arial;
+  font-size: 13.3333px;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+.home-button {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+}
+
+
+.logout-button {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+}
+
+.material-button {
+  background-color: #328b35;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.material-button:hover {
+  background-color: #2d7431;
+}
+
+
+/**/
+
+.checkbox-container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 16px;
+  user-select: none;
+  color: #4caf50;
+}
+
+.checkbox-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 5px;
+}
+
+.checkbox-container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+.checkbox-container input:checked ~ .checkmark {
+  background-color: #4caf50;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.checkbox-container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.checkbox-container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+
+.submit-button {
+  background-color: #4caf50;
+  color: white;
+  padding: 14px 20px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.submit-button:hover {
+  background-color: #388e3c;
+}
+
+.buttons table {
+  width: 100%; /* Ensure the table fills the container */
+  border-collapse: collapse; /* Collapse borders */
+}
+
+.buttons th, .buttons td {
+  padding: 15px; /* Increase padding for more space */
+  text-align: left; /* Align text to the left */
+}
+
+.buttons th:first-child, .buttons td:first-child {
+  padding-left: 30px; /* Add extra padding to the first column */
+}
+
+.buttons th:last-child, .buttons td:last-child {
+  padding-right: 30px; /* Add extra padding to the last column */
+}
+
+input[type="file"] {
+  display: none;
+}

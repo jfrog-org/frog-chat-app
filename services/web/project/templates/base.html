@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Swamp Chat</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/stylesheet.css') }}">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js" integrity="sha512-q/dWJ3kcmjBLU4Qc47E4A9kTB4m3wuTY7vkFJDTZKjTs8jhyGQnaUrxa0Ytd0ssMZhbNua9hE+E7Qv1j+DyZwA==" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="home-button">
+        <form action="{{ url_for('chat.home') }}" method="get">
+            <button class="material-button" type="submit">Home</button>
+        </form>
+    </div>
+    <div class="content">{% block content %} {% endblock %}</div>
+    <div class="logout-button">
+        <form action="{{ url_for('auth.logout') }}" method="post">
+            <button class="material-button" type="submit">Logout</button>
+        </form>
+    </div>
+</body>
+</html>

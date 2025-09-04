@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="message-box">
+  <h2>Chat Room: {{code}}</h2>
+  <div class="messages" id="messages"></div>
+  <div class="inputs">
+    <input
+    type="text"
+    rows="3"
+    placeholder="Message"
+    username="message"
+    id="message"
+    class="message-input"
+    />
+    <div style="display: flex;justify-content: space-between;width: calc(100% - 100px);">
+      <div>
+        <button type="button" usersname="send" id="send-btn" onclick="sendMessage()" class="send-button">Send</button>
+      </div>
+      <div>
+        <button style="background-color: #4caf50;color: #fff;border: none;border-radius: 5px;padding: 10px 20px;cursor: pointer;" onclick="document.getElementById('file-upload').click()">Browse files</button>
+        <input type="file" id="file-upload" name="file">
+        <input type="color" id="colorPicker" value="#ffffff"> <!-- Color picker input -->
+        <button onclick="uploadFile()" class="send-button">Upload</button>
+      </div>
+    </div>
+    <input type="hidden" id="isAdmin" value="{{ is_admin }}">
+</div>
+
+</div>
+<script type="text/javascript" src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+{% endblock %}

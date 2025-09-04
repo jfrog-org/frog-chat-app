@@ -1,0 +1,37 @@
+# Ecopower
+## Fighting rebound effect together
+
+Ecopower is a simple python3 library that provides computing power reallocation. Efficient use of existing capabilities instead of turning on and maintaining new servers allows significantly reduce the rebound effect and protect environment.
+
+## History of creation
+
+Climate change has already impacted ecosystems and humans. One of the most pressing issues of our time, it threatens the lives and livelihoods of billions of people. All forms of electricity generation have an environmental impact on our air, water and land. Producing and using electricity more efficiently reduces both the amount of fuel needed to generate electricity and the amount of greenhouse gases and other air pollution emitted as a result. 
+
+It seems that today everyone is trying to save resources and reduce energy consumption. But here's the paradox: energy conservation measures often lead to exactly the opposite results. Despite the widespread installation of energy-saving lamps and the use of economical household appliances, electricity consumption is not decreasing as much as planned, and sometimes even growing! The so-called rebound effect is "guilty" of this.
+
+A typical example of a rebound effect is associated with refrigerators. Modern ones consume no more than half of the electricity consumed by refrigerators released 20-25 years ago. But largely due to this, German citizens began to prefer refrigerators with a larger capacity. And besides, these more voluminous refrigerators have begun to be bought more often, and they are being changed, even if the old ones, also energy efficient, still work normally. [According to statistics][stat], only 13 percent of German houses and apartments have refrigerators manufactured more than 10 years ago, but 20 percent of refrigerators were purchased in the last two years.
+
+Thus, the rebound effect is an increase in electricity consumption due to an increase in the number of devices or a change in consumer attitudes towards their use. According to various studies, which the sociologist and economist Tilman Santarius cites [in his book][book], the rebound effect in Germany is from 10 to 45 percent. Some people think this phenomenon is overrated, but in reality it is the elephant in the room.
+
+## Installation
+
+Ecopower requires no special modules. Just install it using pip:
+```sh
+pip3 install ecopower
+```
+
+## Usage
+
+Start package as module:
+```sh
+python3 -m ecopower
+```
+
+## License
+
+MIT
+
+[//]: # 
+   [stat]: <https://de.statista.com/statistik/daten/studie/662836/umfrage/umfrage-zum-alter-ddes-kuehlschranks-im-haushalt-in-deutschland/>
+   [book]: <https://www.metropolis-verlag.de/Der-Rebound-Effekt/1176%20/book.do>
+
