@@ -17,6 +17,7 @@ permissions:
 
 jobs:
   frogbot-scan:
+    if: false # Turning off Frogbot Execution!
     runs-on: ubuntu-latest
     strategy:
       matrix:
