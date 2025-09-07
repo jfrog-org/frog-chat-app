@@ -2,8 +2,6 @@
 
 **Setup Demo**
 ```
-$ git clone ssh://git@git.jfrog.info/sr/sectools.git
-$ cd sectools/demo_jas
 $ docker build . -t demo_jas
 $ docker run -d -p 1337:80 --env-file ./.env.prod demo_jas
 $ docker exec <container_id> python manage.py create_db
